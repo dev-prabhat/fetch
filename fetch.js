@@ -13,7 +13,7 @@ app.get('/api/branches/autocomplete',(req,res)=>{
   const branches = {}
   
   branches.result = autocomplete.slice(startIndex,endIndex)
- res.json(autocomplete);
+ res.json(branches);
 })
 
 app.get('/api/branches/:city',(req,res)=>{
