@@ -28,6 +28,9 @@ PORT = 8080;
 //   results.results = users.slice(startIndex,endIndex)
 //   res.json(results);
 // })
+app.get('/',(req,res)=>{
+  res.send("Hello and Welcome to my Heroku app")
+})
 app.get('/api/branches/autocomplete',(req,res)=>{
   const page = parseInt(req.query.page);
   const limit = parseInt(req.query.limit);
